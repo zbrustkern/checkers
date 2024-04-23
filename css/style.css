@@ -1,0 +1,184 @@
+
+body {
+    color: gainsboro;
+    background-color: black;
+    font-family: "Press Start 2P", system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+.squares {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30vh;
+    width: 40vw;
+    transform: skew(-15deg);
+    transition: .5s ease;
+
+    &:hover {
+        width: 60vw;
+        margin: 3vh;
+        margin-top: 30vh;
+    }
+}
+
+.sqr {
+    width: 11%;
+    aspect-ratio: 1/1;
+    border: 1px solid gainsboro;
+    font-size: 1em;
+    text-align: center;
+
+    &:hover {
+        transform: scale(1.1);
+        border: 4px solid aquamarine;
+    }
+}
+
+.clicked {
+    border: 2px solid aquamarine;
+    color: blue;
+}
+
+.blk {
+    background-color: black;
+}
+
+.red {
+    background-color: red;
+}
+
+.button {
+    color: gainsboro;
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+    font-family: "Press Start 2P", system-ui, sans-serif;
+    border-color: gainsboro;
+
+    &:hover {
+    border-color: aquamarine;
+    }
+}
+
+.game-header {
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    background-color: black;
+    z-index: 1;
+    max-height: 25vh;
+    width: 100vw;
+    h1 {
+        font-size: 2em;
+        margin-bottom:0;
+    }
+    .button {
+        margin-bottom: 0;
+    }
+}
+
+#open-modal {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+#end-modal {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+#modal-content {
+    width: 60%;
+    text-align: center;
+    line-height: 1.1;
+}
+
+#rules {
+    text-align: left;
+    line-height: 1.5;
+    color: skyblue;
+}
+
+
+
+@media (width < 400px) {
+    .level-one, .level-two, .level-three, .level-four {
+        display: flex;
+        flex-wrap: wrap;
+        width: 60vw;
+        margin: 1.5vh;
+        transform: skew(-30deg);
+        
+        &:hover, &:focus {
+            width: 80vw;
+            margin: 3vh;
+        }
+    }
+
+    .level-one {
+        margin-top: 17vh;
+        &:hover, &:focus {
+            width: 80vw;
+            margin: 3vh;
+            margin-top: 25vh;
+        }
+    }
+
+    .game-header {
+        align-items: center;
+        text-align: center;
+        position: fixed;
+        background-color: black;
+        z-index: 1;
+        max-height: 15vh;
+        width: 100vw;
+        margin: 0;
+        
+        h1 {
+            font-size: 1.5em;
+            padding-top: 8px;
+            margin: 2px;
+        }
+
+        h2 {
+            font-size: .65em;
+            padding: 0;
+            margin: 2px;
+        }
+        .button {
+            font-size: .5em;
+            padding: 4px;
+        }
+    }
+
+    .sqr {
+        &:hover, &:focus {
+            transform: scale(1.1);
+            border: 3px solid aquamarine;
+        }
+    }
+
+    #modal-content {
+        width: 90%;
+        text-align: center;
+        line-height: 1.1;
+    }
+}
