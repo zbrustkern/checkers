@@ -1,7 +1,7 @@
 # Welcome to Checkers!
 ## Screenshots
-1. ![A beautiful synthwave three dimensional four by four by four grid for in neon pink on a black background.](./assets/qubic-screenshot-1.png)
-2. ![A similar board but partially filled out on all levels with sparing x's and o's with one board in focus and larger than the others with a single square highlighted.](./assets/qubic-screenshot-2.png)
+1. ![A beautifully rendered checkers board](./assets/checkers-screenshot-one.png)
+2. ![A similar board but partially played out with black having a couple of Kings and some pieces having been stolen.](./assets/checkers-screenshot-two.png)
 
 ## The Game
 Checkers is a classic American(ish) board game. While there are significant variants across the globe, it's one of the first strategy games often taught to children. After building out 3d tic tac toe, I wanted to stretch the game logic I had to take on the movement of existing pieces versus the relatively simpler placing of new.
@@ -9,8 +9,8 @@ Checkers is a classic American(ish) board game. While there are significant vari
 In its current iteration this game is true to real life- it doesn't prevent you from cheating! Players will take turns moving their pieces, including jumps, and getting their pieces "kinged." Multiple jumps are not currently supported.
 
 ## Getting Started
-If you want to dive right in you can [play here.](https://zbrustkern.github.io/qubic/)
-The original wireframes of the planning process can be found [here](./assets/qubic%20grid.jpg), [here](./assets/Intro%20Modal.jpg), [and here.](./assets/stats%20page.jpg)
+If you want to dive right in you can [play here.](https://zbrustkern.github.io/checkers/)
+This game wasn't planned out to carefully beyond the work done for [Qubic](https://www.zbrustkern.github.io/qubic/)
 
 ## Attributions
 1. [Google Fonts](https://fonts.google.com/) for the in game typography.
